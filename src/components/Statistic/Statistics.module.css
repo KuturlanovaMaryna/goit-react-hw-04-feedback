@@ -1,0 +1,32 @@
+.list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+    text-align: start;
+    padding-left: 100px;
+}
+.item{
+    color: rgb(225, 225, 225);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.itemTotal{
+text-transform: uppercase;
+color: rgb(225, 225, 225);
+margin-top: 16px;
+font-weight: 700;
+font-size: 18px;
+text-decoration: underline;
+}
+.itemPercent{
+text-transform: uppercase;
+color: rgb(225, 225, 225);
+margin-top: 10px;
+margin-bottom: 10px;
+font-weight: 700;
+font-size: 18px;
+text-decoration: underline;
+}
