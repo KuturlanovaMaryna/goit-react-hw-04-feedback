@@ -25,22 +25,34 @@ const App = () => {
   //   });
   // };
 
+  // const onLeaveFeedback = option => {
+  //   switch (option) {
+  //     case 'good':
+  //       setGood(prevGood => prevGood + 1);
+  //       break;
+  //     case 'neutral':
+  //       setNeutral(prevNeutral => prevNeutral + 1);
+  //       break;
+  //     case 'bad':
+  //       setBad(prevBad => prevBad + 1);
+  //       break;
+  //     case 'awful':
+  //       setAwful(prevAwful => prevAwful + 1);
+  //       break;
+  //     default:
+  //       break;
+  //   }
+  // };
+
   const onLeaveFeedback = option => {
-    switch (option) {
-      case 'good':
-        setGood(prevGood => prevGood + 1);
-        break;
-      case 'neutral':
-        setNeutral(prevNeutral => prevNeutral + 1);
-        break;
-      case 'bad':
-        setBad(prevBad => prevBad + 1);
-        break;
-      case 'awful':
-        setAwful(prevAwful => prevAwful + 1);
-        break;
-      default:
-        break;
+    if (option === 'good') {
+      setGood(prevGood => prevGood + 1);
+    } else if (option === 'neutral') {
+      setNeutral(prevNeutral => prevNeutral + 1);
+    } else if (option === 'bad') {
+      setBad(prevBad => prevBad + 1);
+    } else if (option === 'awful') {
+      setAwful(prevAwful => prevAwful + 1);
     }
   };
 
